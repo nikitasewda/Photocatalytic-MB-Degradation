@@ -20,7 +20,7 @@ The structure increases **light absorption**, **charge separation**, and **react
 ### **1. 3D Printing (DLP)**
 - Resin: PEGDA  
 - Ni doping: **0.5%, 1%, 5%, 10%** (by weight)  
-- Layer thickness: **50–100 μm**  
+- Layer thickness: **10 μm**  
 - Exposure time: **5–15 s**  
 
 ### **2. Pyrolysis**
