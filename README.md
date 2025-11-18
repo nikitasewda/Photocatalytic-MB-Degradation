@@ -73,24 +73,6 @@ Pseudo-first-order:
 - **Ni-5%** exhibits the best photocatalytic activity  
 - Cu₂O/Ag improves electron transfer and reduces recombination  
 - MB degradation: **80–95% in 180 minutes**  
-- Good fit to pseudo-first-order kinetics (R² > 0.95)
 
 ---
 
-## 📈 Example Kinetic Fitting (Python)
-
-```python
-import numpy as np
-import matplotlib.pyplot as plt
-
-t = np.array([0, 30, 60, 90, 120, 150, 180])
-C = np.array([...])  # input data
-C0 = C[0]
-
-k = np.polyfit(t, np.log(C0/C), 1)[0]
-
-plt.plot(t, np.log(C0/C), marker='o')
-plt.xlabel("Time (min)")
-plt.ylabel("ln(C0/C)")
-plt.title("Pseudo-First-Order Kinetics")
-plt.show()
