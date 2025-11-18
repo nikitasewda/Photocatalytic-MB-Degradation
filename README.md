@@ -1,78 +1,116 @@
 # Photocatalytic-MB-Degradation
 
+
 ---
 
 ## 🧩 Project Motivation
 
-Methylene Blue is a persistent dye pollutant. To degrade it efficiently under visible light, this project develops a **hybrid catalyst** consisting of:
+The goal is to develop a **visible-light-active, high-surface-area, low-cost photocatalyst** for dye degradation using:
 
 - 3D-printed PEGDA structures  
-- Ni-doped pyrolytic carbon (conductive, porous)  
+- Ni-doped pyrolytic carbon (conductive + porous)  
 - Cu₂O semiconductor coating  
-- Ag nanoparticles for plasmonic enhancement  
+- Ag nanoparticles (drop-casted) for plasmonic enhancement  
 
-The structure increases **light absorption**, **charge separation**, and **reactive oxygen species (ROS)** formation.
+This hybrid catalyst improves **light harvesting**, **charge separation**, and **ROS generation**, accelerating MB degradation.
 
 ---
 
 ## 🏗️ Fabrication Workflow
 
 ### **1. 3D Printing (DLP)**
-- Resin: PEGDA  
-- Ni doping: **0.5%, 1%, 5%, 10%** (by weight)  
-- Layer thickness: **10 μm**  
-- Exposure time: **5–15 s**  
+- Resin: **PEGDA**  
+- Ni doping: **0.5%, 1%, 5%, 10% by weight**  
+- Layer thickness: **50–100 μm**  
+- Exposure time: **5–15 s/layer**
 
 ### **2. Pyrolysis**
 - Temperature: **900°C**  
-- Atmosphere: **Ar/N₂**  
+- Atmosphere: **Argon or Nitrogen**  
 - Heating rate: **5–10°C/min**  
 - Hold: **1–2 hours**  
-- Output: **Ni-doped PyC scaffold**
+- Output: **Ni-doped PyC scaffold** with increased conductivity and surface roughness
 
-### **3. Electrodeposition of Cu₂O + Ag**
-- Electrolyte: CuSO₄·5H₂O (0.75%), NaOH (1.6%), Lactic acid (3.9%)  
-- Voltage: **5 V**  
-- Frequency: **50 Hz**, Duty cycle: **40%**  
+### **3. Cu₂O Coating**
+- Electrodeposition of Cu₂O using:  
+  - CuSO₄·5H₂O (0.75%)  
+  - NaOH (1.6%)  
+  - Lactic acid (3.9%)  
+- Voltage: **5 V**, 50 Hz, **40% duty cycle**  
 - Time: **10–30 minutes**
 
----
-
-## ☀️ Photocatalytic Experiment
-
-### **Reaction Conditions**
-- MB concentration: **10–20 ppm**  
-- Light source: **Visible light (λ > 400 nm)**  
-- Reaction time: **0–180 minutes**  
-- Sampling interval: **30 minutes**  
-- Monitoring: UV-Vis absorbance at **664 nm**
-
-### **Kinetic Model**
-Pseudo-first-order:
-\[
-\ln\left(\frac{C_0}{C}\right) = kt
-\]
+### **4. Ag Nanoparticle Integration (Drop-Casting)**
+- Ag nanoparticle suspension was **drop-casted** on the Cu₂O/PyC surface  
+- Dried at room temperature  
+- Result: Plasmonic Ag domains enhancing electron transfer
 
 ---
 
-## ⚡ Photocatalytic Mechanism (Summary)
+## ☀️ Photocatalytic Experiment (No Kinetics Mentioned)
 
-1. **Photon absorption:** Cu₂O generates e⁻/h⁺ pairs  
-2. **Charge separation:**  
-   - e⁻ transfer to Ag or PyC  
-   - Ag produces hot electrons (plasmonic)  
-3. **ROS generation:**  
-   - e⁻ + O₂ → •O₂⁻  
-   - •O₂⁻ → HO₂• → H₂O₂ → •OH  
-4. **Dye degradation:** ROS and holes oxidize MB → CO₂ + H₂O
+- Dye: **Methylene Blue (10–20 ppm)**  
+- Catalyst: Ni–PyC/Cu₂O/Ag  
+- Light: **Visible light (λ > 400 nm)**  
+- Time: **0–180 minutes**  
+- Monitoring: UV-Vis absorbance decrease at **664 nm**
 
 ---
 
-## 📊 Key Results
+## 🔬 Characterization Techniques & Key Results
 
-- **Ni-5%** exhibits the best photocatalytic activity  
-- Cu₂O/Ag improves electron transfer and reduces recombination  
-- MB degradation: **80–95% in 180 minutes**  
+### **1. SEM / FESEM**
+- Revealed **porous, interconnected carbon network** after pyrolysis  
+- Surface roughness increased with higher Ni content  
+- Cu₂O formed **uniform cubic and polyhedral grains** across the scaffold  
+- Ag drop-cast produced **bright nanoparticles** distributed on Cu₂O surfaces  
+- Ni-5% sample showed the best **morphology + Cu₂O adhesion**
+
+### **2. EDS (Energy Dispersive Spectroscopy)**
+- Confirmed presence of:  
+  - **C** (PyC)  
+  - **Ni** (doping)  
+  - **Cu** and **O** (Cu₂O layer)  
+  - **Ag** (plasmonic nanoparticles)  
+- Elemental mapping showed **uniform Cu and O distribution**, with Ag localized as small clusters
+
+### **3. XRD**
+- Peaks corresponding to **Cu₂O (cubic phase)**  
+- Broad carbon peak confirming **amorphous PyC**  
+- Ni-doping did not distort Cu₂O but improved crystallinity  
+- Ag presence indicated by characteristic peaks around **38°, 44° (Ag (111), (200))**
+
+### **4. Raman Spectroscopy**
+- Clear **D band (~1350 cm⁻¹)** and **G band (~1580 cm⁻¹)** of carbon  
+- ID/IG ratio indicated:
+  - Increased disorder from Ni doping  
+  - Improved graphitization at moderate doping (≈5%)  
+- Additional Cu–O vibration peaks confirm Cu₂O formation  
+- Ag enhanced the Raman signal (plasmonic effect)
 
 ---
+
+## ⭐ Achieved Results
+
+- Ni-5% showed the **best photocatalytic performance** due to optimal conductivity + surface area  
+- Cu₂O provided strong visible-light absorption  
+- Ag nanoparticles boosted **electron extraction** and reduced recombination  
+- Overall MB degradation significantly improved with the hybrid catalyst  
+- Structural and optical characterizations confirm:
+  - Successful fabrication  
+  - Good crystallinity of Cu₂O  
+  - Effective Ag integration  
+  - Enhanced light–matter interaction  
+
+---
+
+## 👥 Authors
+
+- **Your Name** – IIT Jodhpur  
+- Under the supervision of **Dr. Ankur Gupta**, Materials Research Lab  
+
+---
+
+## 📜 License
+
+For academic and research use. Citation appreciated.
 
